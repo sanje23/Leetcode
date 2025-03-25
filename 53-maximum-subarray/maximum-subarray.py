@@ -6,5 +6,5 @@ class Solution:
             if curr<0:
                 curr=0
             curr+=i
-            res=max(res,curr)
+            res=max(curr,res)
         return res
