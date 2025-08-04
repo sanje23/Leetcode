@@ -4,4 +4,5 @@ class Solution:
         n=len(t)
         if n%2!=0:
             return t[n//2]
-        return (t[n//2]+t[(n//2)-1])/2
+        return (t[n//2]+t[n//2-1])/2
+        
