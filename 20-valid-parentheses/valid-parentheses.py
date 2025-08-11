@@ -1,7 +1,7 @@
 class Solution:
     def isValid(self, s: str) -> bool:
-        st=[]
         map={')':'(','}':'{',']':'['}
+        st=[]
         for i in s:
             if i in map:
                 if st and st[-1]==map[i]:
@@ -11,5 +11,4 @@ class Solution:
             else:
                 st.append(i)
         return not st
-
         
