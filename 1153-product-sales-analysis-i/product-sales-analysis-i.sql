@@ -1,1 +1,1 @@
-select Product.product_name, Sales.year, Sales.price from Product join Sales on Product.product_id = Sales.product_id;
+select p.product_name, s.year, s.price from Product p join Sales s on p.product_id = s.product_id;
